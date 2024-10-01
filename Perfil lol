@@ -1,0 +1,92 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+
+System.out.println("\u001B[35mperfil lol");
+System.out.println("");
+System.out.println("\u001B[32mDigite sua lane?\u001B[0m");
+System.out.println("");
+
+
+String lane = sc.nextLine();
+
+System.out.println("");
+
+System.out.println("\u001B[32mPrefere AD ou AP?\u001B[0m");
+System.out.println("");
+
+String tipoDano = sc.nextLine();
+
+System.out.println("");
+System.out.println("\u001B[32mDigite seu Main\u001B[0m");
+System.out.println("");
+
+String Main = sc.nextLine(); 
+
+System.out.println("");
+System.out.println("\u001B[32mdigite seu elo\u001B[0m");
+System.out.println("");
+
+String elo = sc.nextLine();
+
+System.out.println("");
+
+System.out.println("\u001B[32mDigite seu nick\u001B[0m");
+
+System.out.println("");
+
+String nick = sc.nextLine();
+
+System.out.println("");
+
+System.out.println("\u001B[32mPrefere curta ou longa distancia?\u001B[0m");
+
+System.out.println("");    
+
+String distancia = sc.nextLine();
+
+System.out.println("");
+
+System.out.println("\u001B[33mSeu perfil é: \u001B[0m");
+System.out.println("\u001B[32m" + nick + "\u001B[0m"); System.out.println("\u001B[35m" + elo + "\u001B[0m");
+System.out.println("\u001B[32m" + Main + "\u001B[0m"); System.out.println("\u001B[32m" + lane + "\u001B[0m"); 
+System.out.println("\u001B[32m" + tipoDano + "\u001B[0m");
+
+System.out.println("");
+
+   if 
+((lane.equalsIgnoreCase("top"))&& (tipoDano.equalsIgnoreCase("AP")))
+   {
+   System.out.println("\u001B[32mpersonagens recomendados para" + " " + lane  + " " + tipoDano + ":");
+   }
+
+   if 
+((lane.equalsIgnoreCase("top"))&& (tipoDano.equalsIgnoreCase("Ad")))
+   {
+System.out.println("Personagens recomendados: \u001B[32mNasus,Darius,fiora") ;
+   }
+
+
+   if ((lane.equalsIgnoreCase("mid"))&& (tipoDano.equalsIgnoreCase("AP")))
+   {
+System.out.println("Personagens recomendados: \u001B[35mKatarina,veigar,akali");
+   }
+
+   if ((lane.equalsIgnoreCase("mid"))&& (tipoDano.equalsIgnoreCase("Ad")))
+   {
+System.out.println("Personagens recomendados: \u001B[32mzed,yasuo");
+   }
+
+   if ((lane.equalsIgnoreCase("jungle"))&& (tipoDano.equalsIgnoreCase("AP")))
+   {
+System.out.println("Personagens recomendados: \u001B[32mNunu,");
+   }
+
+   if ((lane.equalsIgnoreCase("jungle"))&& (tipoDano.equalsIgnoreCase("Ad")))
+   {
+System.out.println("Personagens recomendados: \u001B[32mlee sin,rengar,shen");
+   }
+ }
+  }
