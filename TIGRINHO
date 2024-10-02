@@ -1,0 +1,70 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("\u001B[33mTIGRINHO");
+    
+Scanner ler = new Scanner(System.in);
+    
+System.out.println(" ");
+    
+Random random = new Random();
+
+int[] vetor = {1,2,3,4,5,6,7,8,9,0};
+
+String jogarDeNovo = "s";
+    
+while (jogarDeNovo.equals("s")) {
+  
+System.out.println("\u001B[35mDigite o quanto quer apostar: ");
+
+int aposta = ler.nextInt();
+  
+int PosicaoDoVetor = random.nextInt(vetor.length);
+
+int PosicaoDoVetorDois = random.nextInt(vetor.length);
+
+int PosicaoDoVetorTres = random.nextInt(vetor.length);
+
+System.out.println(" ");
+    
+System.out.println("\u001B[31m" + PosicaoDoVetor + " " + PosicaoDoVetorDois + " " + PosicaoDoVetorTres);
+
+if (PosicaoDoVetor == PosicaoDoVetorDois && PosicaoDoVetor == PosicaoDoVetorTres) {
+  System.out.println(" ");
+  System.out.println("\u001B[32mVocê ganhou, sua recompensa foi:" + aposta * 10);
+}
+
+else {
+  System.out.println(" ");
+  System.out.println("Você perdeu ");
+}
+
+System.out.println(" ");
+
+System.out.println("\u001B[32mDeseja jogar novamente?");
+
+System.out.println(" ");
+
+System.out.println("\u001B[32mDigite 's' para sim e 'n' para nao ");
+
+System.out.println(" ");
+
+jogarDeNovo = ler.next();
+
+System.out.println(" ");
+
+if (!jogarDeNovo.equals("s") && !jogarDeNovo.equals("n")) {
+  System.out.println(" ");
+  System.out.println("\u001B[31mletra inesperada ");
+  System.out.println(" ");
+  System.out.println("\u001B[32mDigite 's' para sim e 'n' para nao: ");
+  System.out.println(" ");
+  jogarDeNovo = ler.next();
+  System.out.println(" ");
+}
+  
+}
+}
+}
