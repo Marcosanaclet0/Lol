@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+
+     Scanner sc = new Scanner(System.in);
+    
+    System.out.println("Digite o numero que voce quer a tabuada: ");
+
+    System.out.println(" ");
+
+    tabuada(sc.nextInt());
+
+    System.out.println(" ");
+
+    System.out.println("Digite o 1º numero dê enter e digite o 2º numero. " );
+    
+    MaiorMenor(sc.nextInt(), sc.nextInt());
+
+    System.out.println(" ");
+
+    System.out.println("Digite uma palavra: ");
+
+    A(sc.next());
+    
+  }
+    
+public static int tabuada(int n) {
+  System.out.println(" ");
+  
+  System.out.println("a tabuada de " + n + " é: ");
+
+  System.out.println(" ");
+  
+  System.out.println("1X" + n + " = " + "\u001B[32m" + n * 1 + "\u001B[0m");
+  System.out.println("2X" + n + " = " + "\u001B[32m" + n * 2 + "\u001B[0m");
+  System.out.println("3X" + n + " = " + "\u001B[32m" + n * 3 + "\u001B[0m");
+  System.out.println("4X" + n + " = " + "\u001B[32m" + n * 4 + "\u001B[0m");
+  System.out.println("5X" + n + " = " + "\u001B[32m" + n * 5 + "\u001B[0m");
+  System.out.println("6X" + n + " = " + "\u001B[32m" + n * 6 + "\u001B[0m");
+  System.out.println("7X" + n + " = " + "\u001B[32m" + n * 7 + "\u001B[0m");
+  System.out.println("8X" + n + " = " + "\u001B[32m" + n * 8 + "\u001B[0m");
+  System.out.println("9X" + n + " = " + "\u001B[32m" + n * 9 + "\u001B[0m");
+  System.out.println("10X" + n + " = " + "\u001B[32m" + n * 10 + "\u001B[0m");
+
+  return n;
+}
+  
+public static int MaiorMenor(int nmro, int nmro2) {
+
+  
+  
+  if(nmro > nmro2) {
+    System.out.println("o maior numero é: " + "\u001B[32m" + nmro + "\u001B[0m");
+    System.out.println("o menor numero é: " + "\u001B[31m" + nmro2 + "\u001B[0m");
+  }
+  
+  if (nmro < nmro2) {
+    System.out.println("o maior numero é: " + "\u001B[32m" + nmro2 + "\u001B[0m");
+    System.out.println("o menor numero é: " + "\u001B[31m" + nmro + "\u001B[0m");
+  }
+
+  if (nmro == nmro2) {
+    System.out.println("\u001B[32mos numeros são iguais" + "\u001B[0m");
+  }
+  return nmro;
+
+}
+
+public static String A(String palavra) {
+  System.out.println(" ");
+  
+  System.out.println("a palavra " + palavra + " tem " + "\u001B[32m" + palavra.length() + "\u001B[0m" + " letras");
+
+  return palavra;
+}
+
+  //public static () {
+  
+ // }
+  
+}
